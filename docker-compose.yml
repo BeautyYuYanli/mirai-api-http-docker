@@ -1,0 +1,12 @@
+version: "3"
+services:
+  main:
+    image: test:latest
+    # command: sh -c "./mcl"
+    command: sh -c "while [ 1 ]; do x=1; done "
+    ports:
+      - "8080:8080" # 默认监听端口
+    working_dir: /app
+    volumes:
+      - ./setting.yml:/app/config/net.mamoe.mirai-api-http/setting.yml
+      - ./AutoLogin.yml:/app/config/Console/AutoLogin.yml
