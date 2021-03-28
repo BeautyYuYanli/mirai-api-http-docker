@@ -1,7 +1,7 @@
 version: "3"
 services:
   main:
-    image: test:latest
+    image: beautyyu/mirai-api-http-docker:latest
     # command: sh -c "./mcl"
     command: sh -c "while [ 1 ]; do x=1; done "
     ports:
